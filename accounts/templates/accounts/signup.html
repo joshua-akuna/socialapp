@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'accounts/style.css'%}">
+    <title>signup | socialapp</title>
 </head>
 <body>
-    Sign up page
+    <div class="form-container">
+        <form action="" method="post">{% csrf_token %}
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="password1">Password:</label>
+                <input type="password" name="password1" id="password1">
+            </div>
+            <div>
+                <label for="password2">Confirm password:</label>
+                <input type="password" name="password2" id="password2">
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
 </body>
 </html>

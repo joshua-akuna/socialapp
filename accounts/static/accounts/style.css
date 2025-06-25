@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.form-container {
+    background-color: #fbf9f7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container div {
+    margin: 10px 0;
+}
+
+form {
+    max-width: 40%;
+}
+
+.form-container input, .form-container button{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 4rem;
+    outline: none;
+}
+
+.form-container label {
+    display: block;
+}
