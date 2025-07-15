@@ -3,3 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.form-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form p {
+    padding: 0.3rem 0;
+}
+
+.form p, .form button, .form ul li{
+    margin: 0 0.35rem;
+}
+
+.form p label, .form p input, .form p span{
+    display: block;
+    width: 100%;
+}
+
+.form button {
+    width: 50%;
+}
+
+.form ul li {
+    list-style-type: none;
+}
+
+.form ul li, .form p span{
+    font-weight: 100;
+    font-size: smaller;
+}
+
+.form p input, .form button {
+    padding: 0.3rem 0.5rem;
+    outline:  none;
+}
+
+.form button:hover {
+    background-color: black;
+    color: white;
+}

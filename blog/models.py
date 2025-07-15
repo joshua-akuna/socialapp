@@ -7,7 +7,7 @@ from django.db.models.functions import Lower
 class Profile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='profiles')
     created_at = models.DateTimeField(auto_now_add=True)
-    #username = models.CharField(max_length=50, null=False, blank=False)
+    # username = models.CharField(max_length=50, null=False, blank=False)
 
 
 class Category(models.Model):
